@@ -33,10 +33,10 @@ public class ScriptCanvas : MonoBehaviour
 
     public void Start()
     {
-        upKIP = 120;
-        downKIP = 60;
+        upKIP = 50;
+        downKIP = 10;
         Year = 2237;
-        Population = 500;
+        Population = 60;
         StartCoroutine(IncPop());
         StartCoroutine(Time());
         
@@ -53,41 +53,25 @@ public class ScriptCanvas : MonoBehaviour
     }
 
 
-
+	//Цикл прироста населения
     IEnumerator IncPop()
     {
         while (true)
         {
-          float x = (upKIP - downKIP) / 60;
-  //          if (x > 1)
-                Population += (long)x;
-  //          else
-       //         x = x++;
-           
+         float x = (upKIP - downKIP) / 60;
+         if (x > 1)
+               Population += (long)x;
+         else
+				Population++;
+          
             
-            yield return new WaitForSeconds(1f);
+           yield return new WaitForSeconds(1f);
 
-        }
-//		//Цикл прироста населения
-//		IEnumerator IncPop()
-//		{
-//			while(true){
-//				for (long x = Population; x < 1000; x++) {
-//					Population = Population + 1;
-//				};
-//				if (Population > 999) {
-//
-//					Population = Population + ((upKIP - downKIP) / 60);
-//
-//				}
-//				yield return new WaitForSeconds(1f);
-//
-//			}
-//		}
+       }
+	}
 
-    }//Цикл прироста населения
 
-    IEnumerator Time()
+		IEnumerator Time()
     {
         while (true)
         {

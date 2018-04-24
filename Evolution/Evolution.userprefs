@@ -1,8 +1,8 @@
-﻿<Properties StartupItem="Evolution.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Planet\Skript.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ScriptCanvas.cs">
     <Files>
-      <File FileName="Assets\Planet\Skript.cs" Line="11" Column="2" />
+      <File FileName="Assets\Script\ScriptCanvas.cs" Line="76" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
