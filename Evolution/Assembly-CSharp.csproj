@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\DetectCliks.cs" />
+     <Compile Include="Assets\Script\ScriptCanvas.cs" />
      <Compile Include="Assets\Script\TopMenu.cs" />
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>

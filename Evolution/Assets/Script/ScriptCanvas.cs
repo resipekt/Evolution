@@ -68,6 +68,23 @@ public class ScriptCanvas : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
         }
+//		//Цикл прироста населения
+//		IEnumerator IncPop()
+//		{
+//			while(true){
+//				for (long x = Population; x < 1000; x++) {
+//					Population = Population + 1;
+//				};
+//				if (Population > 999) {
+//
+//					Population = Population + ((upKIP - downKIP) / 60);
+//
+//				}
+//				yield return new WaitForSeconds(1f);
+//
+//			}
+//		}
+
     }//Цикл прироста населения
 
     IEnumerator Time()
@@ -92,26 +109,51 @@ public class ScriptCanvas : MonoBehaviour
 
     }
 
-    public void OpenDownMenu1()//Активация нижнего меню 1
-    {
-        DownMenu1.SetActive(!DownMenu1.activeSelf);
-    }
-    public void OpenDownMenu2()//Активация нижнего меню 2
-    {
-        DownMenu2.SetActive(!DownMenu2.activeSelf);               
-    }    
-    public void OpenDownMenu3()//Активация нижнего меню 3
-    {
-        DownMenu3.SetActive(!DownMenu3.activeSelf);        
-    }
-    public void OpenDownMenu4()//Активация нижнего меню 4
-    {
-        DownMenu4.SetActive(!DownMenu4.activeSelf);
-    }
-    public void OpenDownMenu5()//Активация нижнего меню 5
-    {
-        DownMenu5.SetActive(!DownMenu5.activeSelf);
-    }
+	public void OpenDownMenu1()//Активация нижнего меню 1
+	{
+		DownMenu1.SetActive(!DownMenu1.activeSelf);
+		DownMenu2.SetActive(false);
+		DownMenu3.SetActive(false);
+		DownMenu4.SetActive(false);
+		DownMenu5.SetActive(false);
+		TopMenu.SetActive(false);
+	}
+	public void OpenDownMenu2()//Активация нижнего меню 2
+	{
+		DownMenu2.SetActive(!DownMenu2.activeSelf);
+		DownMenu1.SetActive(false);
+		DownMenu3.SetActive(false);
+		DownMenu4.SetActive(false);
+		DownMenu5.SetActive(false);
+		TopMenu.SetActive(false);
+	}    
+	public void OpenDownMenu3()//Активация нижнего меню 3
+	{
+		DownMenu3.SetActive(!DownMenu3.activeSelf);
+		DownMenu1.SetActive(false);
+		DownMenu2.SetActive(false);
+		DownMenu4.SetActive(false);
+		DownMenu5.SetActive(false);
+		TopMenu.SetActive(false);
+	}
+	public void OpenDownMenu4()//Активация нижнего меню 4
+	{
+		DownMenu4.SetActive(!DownMenu4.activeSelf);
+		DownMenu1.SetActive(false);
+		DownMenu2.SetActive(false);
+		DownMenu3.SetActive(false);
+		DownMenu5.SetActive(false);
+		TopMenu.SetActive(false);
+	}
+	public void OpenDownMenu5()//Активация нижнего меню 5
+	{
+		DownMenu5.SetActive(!DownMenu5.activeSelf);
+		DownMenu1.SetActive(false);
+		DownMenu2.SetActive(false);
+		DownMenu3.SetActive(false);
+		DownMenu4.SetActive(false);
+		TopMenu.SetActive(false);
+	}
 
 
 
